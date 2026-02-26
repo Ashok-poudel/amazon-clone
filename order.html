@@ -1,0 +1,17 @@
+<div style="padding:40px;">
+<h2>Select Payment Method</h2>
+
+<label><input type="radio" name="pay"> Cash on Delivery</label><br>
+<label><input type="radio" name="pay"> eSewa</label><br>
+<label><input type="radio" name="pay"> Khalti</label><br><br>
+
+<button onclick="placeOrder()">Place Order</button>
+</div>
+
+<script>
+function placeOrder(){
+    localStorage.removeItem("cart");
+    alert("Order Successful 🎉");
+    window.location.href="index.html";
+}
+</script>

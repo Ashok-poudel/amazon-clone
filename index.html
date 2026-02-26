@@ -7,86 +7,80 @@
 </head>
 <body>
 
-<!-- HEADER -->
 <header class="navbar">
     <div class="nav-left">
-    <img src="amazon_logo.png" class="logo">
-    </div>
-
-    <div class="nav-center">
-        <input type="text" placeholder="Search Amazon">
-        <button>Search</button>
+        <img src="amazon_logo.png" class="logo">
     </div>
 
     <div class="nav-right">
         <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="cart.html">Cart 🛒</a>
+        <a href="cart.html">Cart 🛒 (<span id="cart-count">0</span>)</a>
     </div>
 </header>
 
-<!-- HERO SECTION -->
 <section class="hero">
     <img src="hero_image.jpg">
 </section>
 
-<!-- PRODUCTS -->
 <section class="products">
 
-    <div class="box">
+    <!-- Product 1 -->
+    <div class="box" onclick="viewProduct('Clothes','box1_image.jpg',1200)">
         <img src="box1_image.jpg">
         <h3>Clothes</h3>
-        <button onclick="addToCart('Clothes')">Add to Cart</button>
+        <p>Rs 1200</p>
     </div>
 
-    <div class="box">
+    <!-- Product 2 -->
+    <div class="box" onclick="viewProduct('Health & Care','box2_image.jpg',800)">
         <img src="box2_image.jpg">
         <h3>Health & Care</h3>
-        <button onclick="addToCart('Health & Care')">Add to Cart</button>
+        <p>Rs 800</p>
     </div>
 
-    <div class="box">
+    <!-- Product 3 -->
+    <div class="box" onclick="viewProduct('Furniture','box3_image.jpg',15000)">
         <img src="box3_image.jpg">
         <h3>Furniture</h3>
-        <button onclick="addToCart('Furniture')">Add to Cart</button>
+        <p>Rs 15000</p>
     </div>
 
-    <div class="box">
+    <!-- Product 4 -->
+    <div class="box" onclick="viewProduct('Electronics','box4_image.jpg',25000)">
         <img src="box4_image.jpg">
         <h3>Electronics</h3>
-        <button onclick="addToCart('Electronics')">Add to Cart</button>
+        <p>Rs 25000</p>
     </div>
 
-    <div class="box">
+    <!-- Product 5 -->
+    <div class="box" onclick="viewProduct('Beauty','box5_image.jpg',2000)">
         <img src="box5_image.jpg">
         <h3>Beauty</h3>
-        <button onclick="addToCart('Beauty')">Add to Cart</button>
+        <p>Rs 2000</p>
     </div>
 
-    <div class="box">
+    <!-- Product 6 -->
+    <div class="box" onclick="viewProduct('Pets','box6_image.jpg',1000)">
         <img src="box6_image.jpg">
         <h3>Pets</h3>
-        <button onclick="addToCart('Pets')">Add to Cart</button>
+        <p>Rs 1000</p>
     </div>
 
-    <div class="box">
+    <!-- Product 7 -->
+    <div class="box" onclick="viewProduct('Toys','box7_image.jpg',1800)">
         <img src="box7_image.jpg">
         <h3>Toys</h3>
-        <button onclick="addToCart('Toys')">Add to Cart</button>
+        <p>Rs 1800</p>
     </div>
 
-    <div class="box">
+    <!-- Product 8 -->
+    <div class="box" onclick="viewProduct('Fashion','box8_image.jpg',2200)">
         <img src="box8_image.jpg">
         <h3>Fashion</h3>
-        <button onclick="addToCart('Fashion')">Add to Cart</button>
+        <p>Rs 2200</p>
     </div>
 
 </section>
-
-<footer>
-    <p>© 2026 Amazon Clone 💻</p>
-</footer>
 
 <script src="script.js"></script>
 </body>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <h2 style="color:white;">Login</h2>
+</header>
+
+<div style="padding:40px; text-align:center;">
+    <input type="text" id="username" placeholder="Username"><br><br>
+    <input type="password" id="password" placeholder="Password"><br><br>
+    <button onclick="login()">Login</button>
+    <p>Don't have account? <a href="register.html">Register</a></p>
+</div>
+
+<script>
+function login() {
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
+
+    let userData = JSON.parse(localStorage.getItem("registeredUser"));
+
+    if (userData && userData.username === username && userData.password === password) {
+        localStorage.setItem("user", username);
+        alert("Login Successful!");
+        window.location.href = "index.html";
+    } else {
+        alert("Invalid Credentials");
+    }
+}
+</script>
+
+</body>
+</html>
