@@ -1,61 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Gift Shop</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h2>Gift Store</h2>
-  <a href="cart.html" class="cart-icon">🛒 <span id="cart-count">0</span></a>
+<!-- HEADER -->
+<header class="navbar">
+    <div class="nav-left">
+    <img src="amazon_logo.png" class="logo">
+    </div>
+
+    <div class="nav-center">
+        <input type="text" placeholder="Search Amazon">
+        <button>Search</button>
+    </div>
+
+    <div class="nav-right">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">Cart 🛒</a>
+    </div>
 </header>
 
-<section class="banner">
-  <div class="banner-text">
-    <h1>Find gifts for dads who have it all</h1>
-  </div>
-  <div class="banner-img">
-    <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1b1" alt="">
-  </div>
+<!-- HERO SECTION -->
+<section class="hero">
+    <img src="hero_image.jpg">
 </section>
 
-<h2 class="title">Products</h2>
+<!-- PRODUCTS -->
+<section class="products">
 
-<div class="products">
-  <div class="product">
-    <img src="https://images.unsplash.com/photo-1518441902117-f9c3bfa0a10a">
-    <h3>Headphones</h3>
-    <p>₹2000</p>
-    <button onclick="addToCart('Headphones',2000)">Add to Cart</button>
-  </div>
+    <div class="box">
+        <img src="box1_image.jpg">
+        <h3>Clothes</h3>
+        <button onclick="addToCart('Clothes')">Add to Cart</button>
+    </div>
 
-  <div class="product">
-    <img src="https://images.unsplash.com/photo-1512499617640-c2f999098c01">
-    <h3>Camera</h3>
-    <p>₹3500</p>
-    <button onclick="addToCart('Camera',3500)">Add to Cart</button>
-  </div>
+    <div class="box">
+        <img src="box2_image.jpg">
+        <h3>Health & Care</h3>
+        <button onclick="addToCart('Health & Care')">Add to Cart</button>
+    </div>
 
-  <div class="product">
-    <img src="https://images.unsplash.com/photo-1606813907291-d86efa6b94db">
-    <h3>Speaker</h3>
-    <p>₹2500</p>
-    <button onclick="addToCart('Speaker',2500)">Add to Cart</button>
-  </div>
+    <div class="box">
+        <img src="box3_image.jpg">
+        <h3>Furniture</h3>
+        <button onclick="addToCart('Furniture')">Add to Cart</button>
+    </div>
 
-  <div class="product">
-    <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f">
-    <h3>Sunglasses</h3>
-    <p>₹1500</p>
-    <button onclick="addToCart('Sunglasses',1500)">Add to Cart</button>
-  </div>
-</div>
+    <div class="box">
+        <img src="box4_image.jpg">
+        <h3>Electronics</h3>
+        <button onclick="addToCart('Electronics')">Add to Cart</button>
+    </div>
+
+    <div class="box">
+        <img src="box5_image.jpg">
+        <h3>Beauty</h3>
+        <button onclick="addToCart('Beauty')">Add to Cart</button>
+    </div>
+
+    <div class="box">
+        <img src="box6_image.jpg">
+        <h3>Pets</h3>
+        <button onclick="addToCart('Pets')">Add to Cart</button>
+    </div>
+
+    <div class="box">
+        <img src="box7_image.jpg">
+        <h3>Toys</h3>
+        <button onclick="addToCart('Toys')">Add to Cart</button>
+    </div>
+
+    <div class="box">
+        <img src="box8_image.jpg">
+        <h3>Fashion</h3>
+        <button onclick="addToCart('Fashion')">Add to Cart</button>
+    </div>
+
+</section>
 
 <footer>
-  <p>© 2026 Gift Store | All Rights Reserved</p>
-  <p>Contact: giftstore@email.com</p>
+    <p>© 2026 Amazon Clone 💻</p>
 </footer>
 
 <script src="script.js"></script>

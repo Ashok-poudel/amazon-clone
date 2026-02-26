@@ -1,101 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+    background-color: #e3e6e6;
 }
 
-header {
-  background: #1f2a44;
-  color: white;
-  padding: 15px 20px;
-  display: flex;
-  justify-content: space-between;
+/* NAVBAR */
+.navbar {
+    background-color: #131921;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
 }
 
-.cart-icon {
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
+.logo {
+    width: 100px;
 }
 
-.banner {
-  display: flex;
-  height: 300px;
+.nav-center input {
+    padding: 8px;
+    width: 300px;
 }
 
-.banner-text {
-  background: #2e3c5d;
-  color: white;
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.nav-center button {
+    padding: 8px 15px;
+    background: #febd69;
+    border: none;
+    cursor: pointer;
 }
 
-.banner-text h1 {
-  width: 70%;
+.nav-right a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
 }
 
-.banner-img {
-  width: 50%;
+.nav-right a:hover {
+    color: #febd69;
 }
 
-.banner-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+/* HERO */
+.hero img {
+    width: 100%;
+    height: 350px;
+    /* object-fit: cover; */
 }
 
-.title {
-  text-align: center;
-  margin: 20px;
-}
-
+/* PRODUCTS */
 .products {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 30px;
 }
 
-.product {
-  border: 1px solid #ccc;
-  width: 220px;
-  text-align: center;
-  padding: 10px;
+.box {
+    background: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
 }
 
-.product img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
+.box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
-button {
-  background: #1f2a44;
-  color: white;
-  border: none;
-  padding: 8px 12px;
-  cursor: pointer;
+.box h3 {
+    margin: 10px 0;
 }
 
-#cart-items {
-  padding: 20px;
+.box button {
+    background-color: #ffd814;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
 }
 
-.cart-item {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
-
-.clear-btn {
-  margin: 20px;
+.box button:hover {
+    background-color: #f7ca00;
 }
 
 footer {
-  background: #1f2a44;
-  color: white;
-  text-align: center;
-  padding: 10px;
+    background-color: #131921;
+    color: white;
+    text-align: center;
+    padding: 15px;
 }
